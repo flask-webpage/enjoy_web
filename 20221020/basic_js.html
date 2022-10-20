@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // 1. 변수
+        var a = 10; // 파이썬에서는 a = 10
+        let b = 20;
+        const c = 30;
+        d = 40;
+
+        // 2. 로그 찍기
+        console.log(a); // 파이썬에서 print()랑 비슷한 역할
+        console.log(b);
+        console.log(c);
+        console.log(d+c);
+
+        // 3. 함수
+        // # 파이썬에서 구현
+        // def add(a, b):
+        //     return a + b
+
+        // 자바스크립트 구현
+        function add(a, b){
+            return a + b
+        }
+
+        console.log('add함수 호출' + add(10, 20));
+        console.log('add함수 호출', add(10, 20));
+
+        // 4. if문
+        // # 파이썬에서 구현
+        // if a > 0:
+        //     ~~~~
+        // elif 조건문:
+        //     ~~~
+        // else:
+        //     ~~
+
+        // 자바스크립트 구현
+        // 기본 문법
+        // if(a > 0){
+
+        // } else if(b > 0){
+
+        // } else if(c > 0){
+
+        // } else{
+
+        // }
+
+        // 실제 구현: var a = 10 >> a는 10
+        if(a > 0){
+            console.log("a는 0보다 큽니다.");
+        }
+
+        // 5. 알림창(alert, confirm, prompt)
+        // alert
+        alert("안녕하세요"); // 통보: 확인 버튼밖에 없음
+
+        // confirm
+        confirm("확인하시겠습니까?"); // 확인(True) / 취소(False) 버튼이 있음
+        if( confirm("확인하면 Hello") ){
+            alert("Hello");
+        }else{
+            alert("NoNoNo");
+        }
+
+        // prompt
+        prompt('1 + 1 = ???');
+        if(prompt('1 + 1 = ???') == 1+1){
+            alert("정답입니다.");
+        }else{
+            alert("틀렸습니다.");
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

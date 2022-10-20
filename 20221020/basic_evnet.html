@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="button" id="btn" value="클릭하면 배경색이 변합니다!">
+
+    <script>
+        // 이벤트
+        // click이벤트 = onclick
+        // 1. 버튼 생성 → id 생성
+        // 2. id 찾기 → id의 요소(태그)를 찾기
+        // 3. 이벤트 만들기
+        let btn = document.getElementById("btn");
+        
+        // console.log(btn);
+        btn.onclick = function(){
+            // alert("짜잔!");
+            document.body.style.backgroundColor = 'green';
+        }
+    </script>
+</body>
+</html>
